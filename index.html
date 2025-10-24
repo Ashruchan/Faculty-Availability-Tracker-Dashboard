@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Availability Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <h1><i class="fa-solid fa-building-columns"></i> Faculty Availability Tracker</h1>
+        <span id="update-time">current time: --:--</span>
+    </header>
+
+    >
+    <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search Faculty...">
+        <select id="departmentFilter">
+            <option value="All">All Departments</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="ME">ME</option>
+            <option value="Civil">Civil</option>
+            <option value="MBA">MBA</option>
+        </select>
+        <button id="darkModeToggle"><i class="solid moon"></i> Dark Mode</button>
+    </section>
+
+
+    <main id="facultyContainer" class="faculty-grid"></main>
+
+
+    <footer>
+        © 2025 ITER College | Faculty Tracker v1.0
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
